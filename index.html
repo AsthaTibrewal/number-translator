@@ -6,60 +6,86 @@
     <title>Number-TRANSLATOR</title>
 </head>
 <style>
+    *{
+        margin: 0;
+    }
+    body
+    {
+        margin: 0%;
+    background-color:hsl(191, 18%, 81%);
+    
+    
+    
+
+    }
+
     textarea{
         width: 80%;
         display: block;
     height: 10vh;
-     margin-left: 2rem;
-     
-      
-    
+     margin: 2rem;
     }
     h2
     {
-background-color: rgb(0, 153, 255);
-padding:4rem 0.5rem;
+
+padding:0rem 0.5rem;
 text-align: center;
- 
 } 
 #output
-{
-    border: 1px solid black;
+{  border: 1px solid black;
     width: 80%;
-        height: 10vh;
+        height: 8vh;
         display: block;
         margin-left: 2rem;
-    padding-left:  0.5rem;
+    padding: 0.5rem;
+    background-color: white;
 
 }
 #btn-translate
 {
-    height: 4vh;
-    margin-left: 3em;
+    margin-left: 3rem;
+    padding: 10px;
     font-size: 1rem;
-    margin-top: 3rem;
-    background-color: rgb(0, 153, 255);
+    background-color: rgb(211, 209, 197);
+    color:rgb(87, 84, 84);
+    border-color:rgb(15, 12, 12);
     
 }
-
-     
-
+#container
+{
+   padding: 2rem 0rem;
+    display: block;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    background-color: rgb(69, 135, 194);
+  
+   
+    
+}
 #display
 {
-padding-top: 1rem;
-font-size: 2rem;
+padding: 0.5rem;
+font-size: 1.5rem;
 display: block;
 margin-left: 3rem;
+margin-top: 1rem;
 
 }
 </style>
 <body>
-<h2>Number-translator</h2>
-<textarea id="txt-input" placeholder="PUT YOUR TEXT"></textarea>
+<div id="container">
+<h2>NUMBER-TRANSLATOR</h2>
+
 <div>
+<textarea id="txt-input" placeholder="PUT YOUR TEXT"></textarea>
+
 <button id="btn-translate">TRANSLATE</button></div>
 <div id="display">output will be here</div>
 <div id="output"></div>
+</div>
 <script src= "app.js" type="text/javascript"></script>
+
 </body>
 </html>
